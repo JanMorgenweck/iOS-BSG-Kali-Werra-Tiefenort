@@ -1,0 +1,1043 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261E1F3A2C873DE5006B889A /* TabelleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E1F392C873DE5006B889A /* TabelleView.swift */; };
+		261E1F3C2C873E0F006B889A /* TabelleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E1F3B2C873E0F006B889A /* TabelleRowView.swift */; };
+		261E1F3E2C873E24006B889A /* TabelleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261E1F3D2C873E24006B889A /* TabelleViewModel.swift */; };
+		2631FACF2C7DBFEB0052AC21 /* Mannschaft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2631FACE2C7DBFEB0052AC21 /* Mannschaft.swift */; };
+		2631FAD32C7DE5450052AC21 /* MannschaftDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2631FAD22C7DE5450052AC21 /* MannschaftDetailView.swift */; };
+		2640338F2C58CDF500A60211 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640338E2C58CDF500A60211 /* WelcomeView.swift */; };
+		264033922C58D15100A60211 /* StartseiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264033912C58D15100A60211 /* StartseiteView.swift */; };
+		265258C22C8881A7002BF1CB /* ImpressumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265258C12C8881A7002BF1CB /* ImpressumView.swift */; };
+		265258C52C888280002BF1CB /* DatenschutzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265258C42C888280002BF1CB /* DatenschutzView.swift */; };
+		265258C82C8882B8002BF1CB /* KontaktView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265258C72C8882B8002BF1CB /* KontaktView.swift */; };
+		265E35DE2C89954C00ABD958 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 265E35DC2C89954C00ABD958 /* Localizable.strings */; };
+		265F4E4A2C44FFAF00DEB1B8 /* BSG_KALI_WERRA_TIEFENORTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F4E492C44FFAF00DEB1B8 /* BSG_KALI_WERRA_TIEFENORTApp.swift */; };
+		265F4E4E2C44FFB000DEB1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265F4E4D2C44FFB000DEB1B8 /* Assets.xcassets */; };
+		265F4E512C44FFB000DEB1B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265F4E502C44FFB000DEB1B8 /* Preview Assets.xcassets */; };
+		265F4E5B2C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F4E5A2C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTTests.swift */; };
+		265F4E652C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F4E642C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITests.swift */; };
+		265F4E672C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F4E662C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITestsLaunchTests.swift */; };
+		2664E63E2C772E240082359E /* SponsorenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664E63D2C772E240082359E /* SponsorenImageView.swift */; };
+		2664E6422C7753840082359E /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2664E6412C7753840082359E /* MailView.swift */; };
+		26796A3E2C8EFFAE0077B727 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26796A3D2C8EFFAE0077B727 /* Text+Extension.swift */; };
+		267B24592C7E076A00A2E161 /* MannschaftenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B24582C7E076A00A2E161 /* MannschaftenViewModel.swift */; };
+		267C480D2C7350A200DD7B4E /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C480C2C7350A200DD7B4E /* AuthView.swift */; };
+		267C48102C73513A00DD7B4E /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C480F2C73513A00DD7B4E /* AuthClient.swift */; };
+		267C48122C73535000DD7B4E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C48112C73535000DD7B4E /* AuthViewModel.swift */; };
+		267C48142C7353E200DD7B4E /* FireStoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C48132C7353E200DD7B4E /* FireStoreClient.swift */; };
+		267C48162C73553E00DD7B4E /* FireUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C48152C73553E00DD7B4E /* FireUser.swift */; };
+		267DFE0D2C7F2682001CB43A /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DFE0C2C7F2682001CB43A /* MatchView.swift */; };
+		267DFE0F2C7F2819001CB43A /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DFE0E2C7F2819001CB43A /* Match.swift */; };
+		267DFE112C7F2FD8001CB43A /* OpenLigaDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DFE102C7F2FD8001CB43A /* OpenLigaDBAPI.swift */; };
+		267DFE132C7F32AD001CB43A /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DFE122C7F32AD001CB43A /* MatchViewModel.swift */; };
+		267DFE1A2C7F9D1B001CB43A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267DFE192C7F9D1B001CB43A /* DateFormatter.swift */; };
+		267F3CF82C5A337E00401DCA /* NeuigkeitenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F3CF72C5A337E00401DCA /* NeuigkeitenView.swift */; };
+		267F3CFB2C5A33E400401DCA /* VereinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F3CFA2C5A33E400401DCA /* VereinView.swift */; };
+		267F3D002C5A343700401DCA /* MannschaftenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F3CFF2C5A343700401DCA /* MannschaftenView.swift */; };
+		267F3D022C5A344800401DCA /* UeberUnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F3D012C5A344800401DCA /* UeberUnsView.swift */; };
+		267F3D042C5A345E00401DCA /* SponsorenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F3D032C5A345E00401DCA /* SponsorenView.swift */; };
+		268FCDF82C69F2D1000A15C3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 268FCDF72C69F2D1000A15C3 /* FirebaseAuth */; };
+		268FCDFE2C69F2D1000A15C3 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 268FCDFD2C69F2D1000A15C3 /* FirebaseDatabase */; };
+		268FCE022C69F2D1000A15C3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 268FCE012C69F2D1000A15C3 /* FirebaseFirestore */; };
+		268FCE162C69F2D1000A15C3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 268FCE152C69F2D1000A15C3 /* FirebaseStorage */; };
+		268FCE1C2C69F47E000A15C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 268FCE1B2C69F47E000A15C3 /* GoogleService-Info.plist */; };
+		269D91B72C7493BE00B93E44 /* SidebarMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D91B62C7493BE00B93E44 /* SidebarMenu.swift */; };
+		269D91BA2C749F1400B93E44 /* SideMenuRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D91B92C749F1400B93E44 /* SideMenuRowType.swift */; };
+		269D91BC2C74A0A400B93E44 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D91BB2C74A0A400B93E44 /* SideMenu.swift */; };
+		269D91C02C74B8EE00B93E44 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D91BF2C74B8EE00B93E44 /* ProfileView.swift */; };
+		26C2AAA02C7886C20065B253 /* UeberUnsAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2AA9F2C7886C20065B253 /* UeberUnsAsyncImage.swift */; };
+		26C2AAA22C7891090065B253 /* FullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2AAA12C7891090065B253 /* FullScreenImageView.swift */; };
+		26C2AAA42C78947E0065B253 /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2AAA32C78947E0065B253 /* ImageItem.swift */; };
+		26C2AAA62C789DE40065B253 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2AAA52C789DE40065B253 /* VideoPlayerView.swift */; };
+		26C2AAA82C789F150065B253 /* VideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C2AAA72C789F150065B253 /* VideosView.swift */; };
+		26C822682C78B7620010B3D0 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C822672C78B7620010B3D0 /* Buttons.swift */; };
+		26DD43C42C75C9F000FB14B9 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD43C32C75C9F000FB14B9 /* News.swift */; };
+		26DD43C62C75CACB00FB14B9 /* NewsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD43C52C75CACB00FB14B9 /* NewsCardView.swift */; };
+		26DD43C82C75D94E00FB14B9 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD43C72C75D94E00FB14B9 /* NewsViewModel.swift */; };
+		26EEDC3A2C9ADC9D00C1AAC0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EEDC392C9ADC9D00C1AAC0 /* Place.swift */; };
+		26EEDC3E2C9AE6CC00C1AAC0 /* KontaktViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EEDC3D2C9AE6CC00C1AAC0 /* KontaktViewModel.swift */; };
+		26EEDC482C9AFD4E00C1AAC0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EEDC472C9AFD4E00C1AAC0 /* MapView.swift */; };
+		26EEDC4A2C9B03D300C1AAC0 /* EmailAdressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EEDC492C9B03D300C1AAC0 /* EmailAdressView.swift */; };
+		26EEDC4C2C9B054D00C1AAC0 /* TrainTravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EEDC4B2C9B054D00C1AAC0 /* TrainTravelView.swift */; };
+		26EEDC4E2C9B09D100C1AAC0 /* ImpressumHilfsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EEDC4D2C9B09D100C1AAC0 /* ImpressumHilfsView.swift */; };
+		26F67E422C7C6C7F009FEE9F /* VereinMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F67E412C7C6C7F009FEE9F /* VereinMailView.swift */; };
+		26F67E442C7C6DA6009FEE9F /* EhrenamtlicheStellenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F67E432C7C6DA6009FEE9F /* EhrenamtlicheStellenView.swift */; };
+		26F67E462C7C6DC1009FEE9F /* MitgliedWerdenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F67E452C7C6DC1009FEE9F /* MitgliedWerdenView.swift */; };
+		26F67E492C7C7787009FEE9F /* EhrenamtMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F67E482C7C7787009FEE9F /* EhrenamtMailView.swift */; };
+		26F67E4C2C7CA7DD009FEE9F /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F67E4B2C7CA7DD009FEE9F /* Teams.swift */; };
+		26F67E4E2C7CB77A009FEE9F /* MitgliedWerdenMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F67E4D2C7CB77A009FEE9F /* MitgliedWerdenMailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		265F4E572C44FFB000DEB1B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265F4E3E2C44FFAF00DEB1B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265F4E452C44FFAF00DEB1B8;
+			remoteInfo = "BSG KALI WERRA TIEFENORT";
+		};
+		265F4E612C44FFB000DEB1B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 265F4E3E2C44FFAF00DEB1B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 265F4E452C44FFAF00DEB1B8;
+			remoteInfo = "BSG KALI WERRA TIEFENORT";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		261E1F392C873DE5006B889A /* TabelleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelleView.swift; sourceTree = "<group>"; };
+		261E1F3B2C873E0F006B889A /* TabelleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelleRowView.swift; sourceTree = "<group>"; };
+		261E1F3D2C873E24006B889A /* TabelleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabelleViewModel.swift; sourceTree = "<group>"; };
+		2631FACE2C7DBFEB0052AC21 /* Mannschaft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mannschaft.swift; sourceTree = "<group>"; };
+		2631FAD22C7DE5450052AC21 /* MannschaftDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MannschaftDetailView.swift; sourceTree = "<group>"; };
+		2640338E2C58CDF500A60211 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		264033912C58D15100A60211 /* StartseiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartseiteView.swift; sourceTree = "<group>"; };
+		265258C12C8881A7002BF1CB /* ImpressumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressumView.swift; sourceTree = "<group>"; };
+		265258C42C888280002BF1CB /* DatenschutzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatenschutzView.swift; sourceTree = "<group>"; };
+		265258C72C8882B8002BF1CB /* KontaktView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktView.swift; sourceTree = "<group>"; };
+		265E35DD2C89954C00ABD958 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		265F4E462C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSG KALI WERRA TIEFENORT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		265F4E492C44FFAF00DEB1B8 /* BSG_KALI_WERRA_TIEFENORTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSG_KALI_WERRA_TIEFENORTApp.swift; sourceTree = "<group>"; };
+		265F4E4D2C44FFB000DEB1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		265F4E502C44FFB000DEB1B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		265F4E562C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BSG KALI WERRA TIEFENORTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		265F4E5A2C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSG_KALI_WERRA_TIEFENORTTests.swift; sourceTree = "<group>"; };
+		265F4E602C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BSG KALI WERRA TIEFENORTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		265F4E642C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSG_KALI_WERRA_TIEFENORTUITests.swift; sourceTree = "<group>"; };
+		265F4E662C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSG_KALI_WERRA_TIEFENORTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2664E63D2C772E240082359E /* SponsorenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorenImageView.swift; sourceTree = "<group>"; };
+		2664E6412C7753840082359E /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		26796A3D2C8EFFAE0077B727 /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		267B24582C7E076A00A2E161 /* MannschaftenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MannschaftenViewModel.swift; sourceTree = "<group>"; };
+		267C480C2C7350A200DD7B4E /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		267C480F2C73513A00DD7B4E /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
+		267C48112C73535000DD7B4E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		267C48132C7353E200DD7B4E /* FireStoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreClient.swift; sourceTree = "<group>"; };
+		267C48152C73553E00DD7B4E /* FireUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireUser.swift; sourceTree = "<group>"; };
+		267DFE0C2C7F2682001CB43A /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		267DFE0E2C7F2819001CB43A /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		267DFE102C7F2FD8001CB43A /* OpenLigaDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLigaDBAPI.swift; sourceTree = "<group>"; };
+		267DFE122C7F32AD001CB43A /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		267DFE192C7F9D1B001CB43A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		267F3CF72C5A337E00401DCA /* NeuigkeitenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuigkeitenView.swift; sourceTree = "<group>"; };
+		267F3CFA2C5A33E400401DCA /* VereinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VereinView.swift; sourceTree = "<group>"; };
+		267F3CFF2C5A343700401DCA /* MannschaftenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MannschaftenView.swift; sourceTree = "<group>"; };
+		267F3D012C5A344800401DCA /* UeberUnsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UeberUnsView.swift; sourceTree = "<group>"; };
+		267F3D032C5A345E00401DCA /* SponsorenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorenView.swift; sourceTree = "<group>"; };
+		268FCE1B2C69F47E000A15C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "BSG KALI WERRA TIEFENORT/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		269D91B62C7493BE00B93E44 /* SidebarMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMenu.swift; sourceTree = "<group>"; };
+		269D91B92C749F1400B93E44 /* SideMenuRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowType.swift; sourceTree = "<group>"; };
+		269D91BB2C74A0A400B93E44 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		269D91BF2C74B8EE00B93E44 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		26C2AA9F2C7886C20065B253 /* UeberUnsAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UeberUnsAsyncImage.swift; sourceTree = "<group>"; };
+		26C2AAA12C7891090065B253 /* FullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageView.swift; sourceTree = "<group>"; };
+		26C2AAA32C78947E0065B253 /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		26C2AAA52C789DE40065B253 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		26C2AAA72C789F150065B253 /* VideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosView.swift; sourceTree = "<group>"; };
+		26C822672C78B7620010B3D0 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		26DD43C32C75C9F000FB14B9 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		26DD43C52C75CACB00FB14B9 /* NewsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardView.swift; sourceTree = "<group>"; };
+		26DD43C72C75D94E00FB14B9 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		26EEDC392C9ADC9D00C1AAC0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		26EEDC3D2C9AE6CC00C1AAC0 /* KontaktViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktViewModel.swift; sourceTree = "<group>"; };
+		26EEDC472C9AFD4E00C1AAC0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		26EEDC492C9B03D300C1AAC0 /* EmailAdressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAdressView.swift; sourceTree = "<group>"; };
+		26EEDC4B2C9B054D00C1AAC0 /* TrainTravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainTravelView.swift; sourceTree = "<group>"; };
+		26EEDC4D2C9B09D100C1AAC0 /* ImpressumHilfsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressumHilfsView.swift; sourceTree = "<group>"; };
+		26F67E412C7C6C7F009FEE9F /* VereinMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VereinMailView.swift; sourceTree = "<group>"; };
+		26F67E432C7C6DA6009FEE9F /* EhrenamtlicheStellenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EhrenamtlicheStellenView.swift; sourceTree = "<group>"; };
+		26F67E452C7C6DC1009FEE9F /* MitgliedWerdenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitgliedWerdenView.swift; sourceTree = "<group>"; };
+		26F67E482C7C7787009FEE9F /* EhrenamtMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EhrenamtMailView.swift; sourceTree = "<group>"; };
+		26F67E4B2C7CA7DD009FEE9F /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		26F67E4D2C7CB77A009FEE9F /* MitgliedWerdenMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitgliedWerdenMailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		265F4E432C44FFAF00DEB1B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268FCDF82C69F2D1000A15C3 /* FirebaseAuth in Frameworks */,
+				268FCDFE2C69F2D1000A15C3 /* FirebaseDatabase in Frameworks */,
+				268FCE162C69F2D1000A15C3 /* FirebaseStorage in Frameworks */,
+				268FCE022C69F2D1000A15C3 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F4E532C44FFB000DEB1B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F4E5D2C44FFB000DEB1B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261E1F382C873DCF006B889A /* Tabelle */ = {
+			isa = PBXGroup;
+			children = (
+				261E1F392C873DE5006B889A /* TabelleView.swift */,
+				261E1F3B2C873E0F006B889A /* TabelleRowView.swift */,
+				261E1F3D2C873E24006B889A /* TabelleViewModel.swift */,
+			);
+			path = Tabelle;
+			sourceTree = "<group>";
+		};
+		2640338C2C58CDB700A60211 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26D1A6E12C9C06C900849256 /* HilfsViews */,
+				265258C62C8882A7002BF1CB /* Kontakt */,
+				265258C32C88826A002BF1CB /* Datenschutz */,
+				265258C02C88818D002BF1CB /* Impressum */,
+				261E1F382C873DCF006B889A /* Tabelle */,
+				267DFE0B2C7F265C001CB43A /* Matches */,
+				267DFE0A2C7F070F001CB43A /* SideBarMenu */,
+				26F67E4A2C7C9BBB009FEE9F /* Mitglied */,
+				26F67E472C7C7754009FEE9F /* Ehrenamt */,
+				267C480B2C73505200DD7B4E /* Auth */,
+				267F3CFE2C5A340F00401DCA /* Sponsoren */,
+				267F3CFD2C5A33FD00401DCA /* Ueber Uns */,
+				267F3CFC2C5A33EF00401DCA /* Mannschaft */,
+				267F3CF92C5A33BE00401DCA /* Verein */,
+				267F3CF62C5A336100401DCA /* Neuigkeiten */,
+				264033902C58D13700A60211 /* Startseite */,
+				2640338D2C58CDC300A60211 /* WelcomeView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2640338D2C58CDC300A60211 /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				2640338E2C58CDF500A60211 /* WelcomeView.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		264033902C58D13700A60211 /* Startseite */ = {
+			isa = PBXGroup;
+			children = (
+				264033912C58D15100A60211 /* StartseiteView.swift */,
+			);
+			path = Startseite;
+			sourceTree = "<group>";
+		};
+		265258C02C88818D002BF1CB /* Impressum */ = {
+			isa = PBXGroup;
+			children = (
+				265258C12C8881A7002BF1CB /* ImpressumView.swift */,
+			);
+			path = Impressum;
+			sourceTree = "<group>";
+		};
+		265258C32C88826A002BF1CB /* Datenschutz */ = {
+			isa = PBXGroup;
+			children = (
+				265258C42C888280002BF1CB /* DatenschutzView.swift */,
+			);
+			path = Datenschutz;
+			sourceTree = "<group>";
+		};
+		265258C62C8882A7002BF1CB /* Kontakt */ = {
+			isa = PBXGroup;
+			children = (
+				265258C72C8882B8002BF1CB /* KontaktView.swift */,
+				26EEDC3D2C9AE6CC00C1AAC0 /* KontaktViewModel.swift */,
+			);
+			path = Kontakt;
+			sourceTree = "<group>";
+		};
+		265F4E3D2C44FFAF00DEB1B8 = {
+			isa = PBXGroup;
+			children = (
+				268FCE1B2C69F47E000A15C3 /* GoogleService-Info.plist */,
+				265F4E482C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT */,
+				265F4E592C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTTests */,
+				265F4E632C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTUITests */,
+				265F4E472C44FFAF00DEB1B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		265F4E472C44FFAF00DEB1B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				265F4E462C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT.app */,
+				265F4E562C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTTests.xctest */,
+				265F4E602C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		265F4E482C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT */ = {
+			isa = PBXGroup;
+			children = (
+				267DFE142C7F593B001CB43A /* Extension */,
+				269D91B82C749EF300B93E44 /* Constant */,
+				265F4E492C44FFAF00DEB1B8 /* BSG_KALI_WERRA_TIEFENORTApp.swift */,
+				2640338C2C58CDB700A60211 /* Views */,
+				267C480E2C7350FD00DD7B4E /* Models */,
+				265F4E4D2C44FFB000DEB1B8 /* Assets.xcassets */,
+				265F4E4F2C44FFB000DEB1B8 /* Preview Content */,
+			);
+			path = "BSG KALI WERRA TIEFENORT";
+			sourceTree = "<group>";
+		};
+		265F4E4F2C44FFB000DEB1B8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				265F4E502C44FFB000DEB1B8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		265F4E592C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTTests */ = {
+			isa = PBXGroup;
+			children = (
+				265F4E5A2C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTTests.swift */,
+			);
+			path = "BSG KALI WERRA TIEFENORTTests";
+			sourceTree = "<group>";
+		};
+		265F4E632C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				265F4E642C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITests.swift */,
+				265F4E662C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITestsLaunchTests.swift */,
+			);
+			path = "BSG KALI WERRA TIEFENORTUITests";
+			sourceTree = "<group>";
+		};
+		267C480B2C73505200DD7B4E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				267C480C2C7350A200DD7B4E /* AuthView.swift */,
+				267C48112C73535000DD7B4E /* AuthViewModel.swift */,
+				269D91BF2C74B8EE00B93E44 /* ProfileView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		267C480E2C7350FD00DD7B4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				267C480F2C73513A00DD7B4E /* AuthClient.swift */,
+				267C48132C7353E200DD7B4E /* FireStoreClient.swift */,
+				267C48152C73553E00DD7B4E /* FireUser.swift */,
+				26DD43C32C75C9F000FB14B9 /* News.swift */,
+				26C2AAA32C78947E0065B253 /* ImageItem.swift */,
+				2631FACE2C7DBFEB0052AC21 /* Mannschaft.swift */,
+				267DFE0E2C7F2819001CB43A /* Match.swift */,
+				267DFE102C7F2FD8001CB43A /* OpenLigaDBAPI.swift */,
+				26EEDC392C9ADC9D00C1AAC0 /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		267DFE0A2C7F070F001CB43A /* SideBarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				269D91B92C749F1400B93E44 /* SideMenuRowType.swift */,
+				269D91BB2C74A0A400B93E44 /* SideMenu.swift */,
+				269D91B62C7493BE00B93E44 /* SidebarMenu.swift */,
+			);
+			path = SideBarMenu;
+			sourceTree = "<group>";
+		};
+		267DFE0B2C7F265C001CB43A /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				267DFE0C2C7F2682001CB43A /* MatchView.swift */,
+				267DFE122C7F32AD001CB43A /* MatchViewModel.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		267DFE142C7F593B001CB43A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				26796A3D2C8EFFAE0077B727 /* Text+Extension.swift */,
+				267DFE192C7F9D1B001CB43A /* DateFormatter.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		267F3CF62C5A336100401DCA /* Neuigkeiten */ = {
+			isa = PBXGroup;
+			children = (
+				267F3CF72C5A337E00401DCA /* NeuigkeitenView.swift */,
+				26DD43C52C75CACB00FB14B9 /* NewsCardView.swift */,
+				26DD43C72C75D94E00FB14B9 /* NewsViewModel.swift */,
+			);
+			path = Neuigkeiten;
+			sourceTree = "<group>";
+		};
+		267F3CF92C5A33BE00401DCA /* Verein */ = {
+			isa = PBXGroup;
+			children = (
+				267F3CFA2C5A33E400401DCA /* VereinView.swift */,
+				26F67E412C7C6C7F009FEE9F /* VereinMailView.swift */,
+			);
+			path = Verein;
+			sourceTree = "<group>";
+		};
+		267F3CFC2C5A33EF00401DCA /* Mannschaft */ = {
+			isa = PBXGroup;
+			children = (
+				267F3CFF2C5A343700401DCA /* MannschaftenView.swift */,
+				2631FAD22C7DE5450052AC21 /* MannschaftDetailView.swift */,
+				267B24582C7E076A00A2E161 /* MannschaftenViewModel.swift */,
+			);
+			path = Mannschaft;
+			sourceTree = "<group>";
+		};
+		267F3CFD2C5A33FD00401DCA /* Ueber Uns */ = {
+			isa = PBXGroup;
+			children = (
+				267F3D012C5A344800401DCA /* UeberUnsView.swift */,
+			);
+			path = "Ueber Uns";
+			sourceTree = "<group>";
+		};
+		267F3CFE2C5A340F00401DCA /* Sponsoren */ = {
+			isa = PBXGroup;
+			children = (
+				2664E63D2C772E240082359E /* SponsorenImageView.swift */,
+				267F3D032C5A345E00401DCA /* SponsorenView.swift */,
+				2664E6412C7753840082359E /* MailView.swift */,
+			);
+			path = Sponsoren;
+			sourceTree = "<group>";
+		};
+		269D91B82C749EF300B93E44 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				26C2AAA52C789DE40065B253 /* VideoPlayerView.swift */,
+				26C822672C78B7620010B3D0 /* Buttons.swift */,
+				265E35DC2C89954C00ABD958 /* Localizable.strings */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		26D1A6E12C9C06C900849256 /* HilfsViews */ = {
+			isa = PBXGroup;
+			children = (
+				26C2AAA12C7891090065B253 /* FullScreenImageView.swift */,
+				26C2AA9F2C7886C20065B253 /* UeberUnsAsyncImage.swift */,
+				26C2AAA72C789F150065B253 /* VideosView.swift */,
+				26EEDC4D2C9B09D100C1AAC0 /* ImpressumHilfsView.swift */,
+				26EEDC4B2C9B054D00C1AAC0 /* TrainTravelView.swift */,
+				26EEDC472C9AFD4E00C1AAC0 /* MapView.swift */,
+				26EEDC492C9B03D300C1AAC0 /* EmailAdressView.swift */,
+			);
+			path = HilfsViews;
+			sourceTree = "<group>";
+		};
+		26F67E472C7C7754009FEE9F /* Ehrenamt */ = {
+			isa = PBXGroup;
+			children = (
+				26F67E432C7C6DA6009FEE9F /* EhrenamtlicheStellenView.swift */,
+				26F67E482C7C7787009FEE9F /* EhrenamtMailView.swift */,
+			);
+			path = Ehrenamt;
+			sourceTree = "<group>";
+		};
+		26F67E4A2C7C9BBB009FEE9F /* Mitglied */ = {
+			isa = PBXGroup;
+			children = (
+				26F67E4B2C7CA7DD009FEE9F /* Teams.swift */,
+				26F67E452C7C6DC1009FEE9F /* MitgliedWerdenView.swift */,
+				26F67E4D2C7CB77A009FEE9F /* MitgliedWerdenMailView.swift */,
+			);
+			path = Mitglied;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		265F4E452C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265F4E6A2C44FFB000DEB1B8 /* Build configuration list for PBXNativeTarget "BSG KALI WERRA TIEFENORT" */;
+			buildPhases = (
+				265F4E422C44FFAF00DEB1B8 /* Sources */,
+				265F4E432C44FFAF00DEB1B8 /* Frameworks */,
+				265F4E442C44FFAF00DEB1B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BSG KALI WERRA TIEFENORT";
+			packageProductDependencies = (
+				268FCDF72C69F2D1000A15C3 /* FirebaseAuth */,
+				268FCDFD2C69F2D1000A15C3 /* FirebaseDatabase */,
+				268FCE012C69F2D1000A15C3 /* FirebaseFirestore */,
+				268FCE152C69F2D1000A15C3 /* FirebaseStorage */,
+			);
+			productName = "BSG KALI WERRA TIEFENORT";
+			productReference = 265F4E462C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		265F4E552C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265F4E6D2C44FFB000DEB1B8 /* Build configuration list for PBXNativeTarget "BSG KALI WERRA TIEFENORTTests" */;
+			buildPhases = (
+				265F4E522C44FFB000DEB1B8 /* Sources */,
+				265F4E532C44FFB000DEB1B8 /* Frameworks */,
+				265F4E542C44FFB000DEB1B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265F4E582C44FFB000DEB1B8 /* PBXTargetDependency */,
+			);
+			name = "BSG KALI WERRA TIEFENORTTests";
+			productName = "BSG KALI WERRA TIEFENORTTests";
+			productReference = 265F4E562C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		265F4E5F2C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265F4E702C44FFB000DEB1B8 /* Build configuration list for PBXNativeTarget "BSG KALI WERRA TIEFENORTUITests" */;
+			buildPhases = (
+				265F4E5C2C44FFB000DEB1B8 /* Sources */,
+				265F4E5D2C44FFB000DEB1B8 /* Frameworks */,
+				265F4E5E2C44FFB000DEB1B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				265F4E622C44FFB000DEB1B8 /* PBXTargetDependency */,
+			);
+			name = "BSG KALI WERRA TIEFENORTUITests";
+			productName = "BSG KALI WERRA TIEFENORTUITests";
+			productReference = 265F4E602C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		265F4E3E2C44FFAF00DEB1B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					265F4E452C44FFAF00DEB1B8 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					265F4E552C44FFB000DEB1B8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 265F4E452C44FFAF00DEB1B8;
+					};
+					265F4E5F2C44FFB000DEB1B8 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 265F4E452C44FFAF00DEB1B8;
+					};
+				};
+			};
+			buildConfigurationList = 265F4E412C44FFAF00DEB1B8 /* Build configuration list for PBXProject "BSG KALI WERRA TIEFENORT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				de,
+			);
+			mainGroup = 265F4E3D2C44FFAF00DEB1B8;
+			packageReferences = (
+				268FCDEC2C69F2D1000A15C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 265F4E472C44FFAF00DEB1B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				265F4E452C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT */,
+				265F4E552C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTTests */,
+				265F4E5F2C44FFB000DEB1B8 /* BSG KALI WERRA TIEFENORTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		265F4E442C44FFAF00DEB1B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268FCE1C2C69F47E000A15C3 /* GoogleService-Info.plist in Resources */,
+				265E35DE2C89954C00ABD958 /* Localizable.strings in Resources */,
+				265F4E512C44FFB000DEB1B8 /* Preview Assets.xcassets in Resources */,
+				265F4E4E2C44FFB000DEB1B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F4E542C44FFB000DEB1B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F4E5E2C44FFB000DEB1B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		265F4E422C44FFAF00DEB1B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26796A3E2C8EFFAE0077B727 /* Text+Extension.swift in Sources */,
+				2631FAD32C7DE5450052AC21 /* MannschaftDetailView.swift in Sources */,
+				26C2AAA82C789F150065B253 /* VideosView.swift in Sources */,
+				26F67E462C7C6DC1009FEE9F /* MitgliedWerdenView.swift in Sources */,
+				265258C82C8882B8002BF1CB /* KontaktView.swift in Sources */,
+				26F67E492C7C7787009FEE9F /* EhrenamtMailView.swift in Sources */,
+				267F3D022C5A344800401DCA /* UeberUnsView.swift in Sources */,
+				26F67E4E2C7CB77A009FEE9F /* MitgliedWerdenMailView.swift in Sources */,
+				267F3D002C5A343700401DCA /* MannschaftenView.swift in Sources */,
+				26F67E442C7C6DA6009FEE9F /* EhrenamtlicheStellenView.swift in Sources */,
+				267F3CFB2C5A33E400401DCA /* VereinView.swift in Sources */,
+				261E1F3E2C873E24006B889A /* TabelleViewModel.swift in Sources */,
+				26EEDC3E2C9AE6CC00C1AAC0 /* KontaktViewModel.swift in Sources */,
+				265258C52C888280002BF1CB /* DatenschutzView.swift in Sources */,
+				26F67E4C2C7CA7DD009FEE9F /* Teams.swift in Sources */,
+				269D91BA2C749F1400B93E44 /* SideMenuRowType.swift in Sources */,
+				267C48142C7353E200DD7B4E /* FireStoreClient.swift in Sources */,
+				267F3CF82C5A337E00401DCA /* NeuigkeitenView.swift in Sources */,
+				2664E6422C7753840082359E /* MailView.swift in Sources */,
+				2631FACF2C7DBFEB0052AC21 /* Mannschaft.swift in Sources */,
+				26EEDC4E2C9B09D100C1AAC0 /* ImpressumHilfsView.swift in Sources */,
+				267C48102C73513A00DD7B4E /* AuthClient.swift in Sources */,
+				269D91BC2C74A0A400B93E44 /* SideMenu.swift in Sources */,
+				26C2AAA42C78947E0065B253 /* ImageItem.swift in Sources */,
+				26DD43C62C75CACB00FB14B9 /* NewsCardView.swift in Sources */,
+				267DFE132C7F32AD001CB43A /* MatchViewModel.swift in Sources */,
+				26EEDC4C2C9B054D00C1AAC0 /* TrainTravelView.swift in Sources */,
+				2664E63E2C772E240082359E /* SponsorenImageView.swift in Sources */,
+				265F4E4A2C44FFAF00DEB1B8 /* BSG_KALI_WERRA_TIEFENORTApp.swift in Sources */,
+				267DFE112C7F2FD8001CB43A /* OpenLigaDBAPI.swift in Sources */,
+				26C2AAA02C7886C20065B253 /* UeberUnsAsyncImage.swift in Sources */,
+				267C48162C73553E00DD7B4E /* FireUser.swift in Sources */,
+				267B24592C7E076A00A2E161 /* MannschaftenViewModel.swift in Sources */,
+				267C480D2C7350A200DD7B4E /* AuthView.swift in Sources */,
+				26EEDC3A2C9ADC9D00C1AAC0 /* Place.swift in Sources */,
+				261E1F3C2C873E0F006B889A /* TabelleRowView.swift in Sources */,
+				267C48122C73535000DD7B4E /* AuthViewModel.swift in Sources */,
+				264033922C58D15100A60211 /* StartseiteView.swift in Sources */,
+				269D91B72C7493BE00B93E44 /* SidebarMenu.swift in Sources */,
+				2640338F2C58CDF500A60211 /* WelcomeView.swift in Sources */,
+				26C2AAA22C7891090065B253 /* FullScreenImageView.swift in Sources */,
+				26DD43C82C75D94E00FB14B9 /* NewsViewModel.swift in Sources */,
+				26C2AAA62C789DE40065B253 /* VideoPlayerView.swift in Sources */,
+				26C822682C78B7620010B3D0 /* Buttons.swift in Sources */,
+				26F67E422C7C6C7F009FEE9F /* VereinMailView.swift in Sources */,
+				267DFE1A2C7F9D1B001CB43A /* DateFormatter.swift in Sources */,
+				269D91C02C74B8EE00B93E44 /* ProfileView.swift in Sources */,
+				265258C22C8881A7002BF1CB /* ImpressumView.swift in Sources */,
+				267DFE0F2C7F2819001CB43A /* Match.swift in Sources */,
+				267F3D042C5A345E00401DCA /* SponsorenView.swift in Sources */,
+				267DFE0D2C7F2682001CB43A /* MatchView.swift in Sources */,
+				26EEDC482C9AFD4E00C1AAC0 /* MapView.swift in Sources */,
+				26EEDC4A2C9B03D300C1AAC0 /* EmailAdressView.swift in Sources */,
+				261E1F3A2C873DE5006B889A /* TabelleView.swift in Sources */,
+				26DD43C42C75C9F000FB14B9 /* News.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F4E522C44FFB000DEB1B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265F4E5B2C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		265F4E5C2C44FFB000DEB1B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265F4E652C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITests.swift in Sources */,
+				265F4E672C44FFB000DEB1B8 /* BSG_KALI_WERRA_TIEFENORTUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		265F4E582C44FFB000DEB1B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265F4E452C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT */;
+			targetProxy = 265F4E572C44FFB000DEB1B8 /* PBXContainerItemProxy */;
+		};
+		265F4E622C44FFB000DEB1B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 265F4E452C44FFAF00DEB1B8 /* BSG KALI WERRA TIEFENORT */;
+			targetProxy = 265F4E612C44FFB000DEB1B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		265E35DC2C89954C00ABD958 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				265E35DD2C89954C00ABD958 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		265F4E682C44FFB000DEB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		265F4E692C44FFB000DEB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		265F4E6B2C44FFB000DEB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BSG KALI WERRA TIEFENORT/Preview Content\"";
+				DEVELOPMENT_TEAM = 7Q57753WBZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.BSG-KALI-WERRA-TIEFENORT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		265F4E6C2C44FFB000DEB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BSG KALI WERRA TIEFENORT/Preview Content\"";
+				DEVELOPMENT_TEAM = 7Q57753WBZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.BSG-KALI-WERRA-TIEFENORT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		265F4E6E2C44FFB000DEB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Q57753WBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.BSG-KALI-WERRA-TIEFENORTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSG KALI WERRA TIEFENORT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BSG KALI WERRA TIEFENORT";
+			};
+			name = Debug;
+		};
+		265F4E6F2C44FFB000DEB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Q57753WBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.BSG-KALI-WERRA-TIEFENORTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSG KALI WERRA TIEFENORT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BSG KALI WERRA TIEFENORT";
+			};
+			name = Release;
+		};
+		265F4E712C44FFB000DEB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Q57753WBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.BSG-KALI-WERRA-TIEFENORTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BSG KALI WERRA TIEFENORT";
+			};
+			name = Debug;
+		};
+		265F4E722C44FFB000DEB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7Q57753WBZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.BSG-KALI-WERRA-TIEFENORTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BSG KALI WERRA TIEFENORT";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		265F4E412C44FFAF00DEB1B8 /* Build configuration list for PBXProject "BSG KALI WERRA TIEFENORT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265F4E682C44FFB000DEB1B8 /* Debug */,
+				265F4E692C44FFB000DEB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265F4E6A2C44FFB000DEB1B8 /* Build configuration list for PBXNativeTarget "BSG KALI WERRA TIEFENORT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265F4E6B2C44FFB000DEB1B8 /* Debug */,
+				265F4E6C2C44FFB000DEB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265F4E6D2C44FFB000DEB1B8 /* Build configuration list for PBXNativeTarget "BSG KALI WERRA TIEFENORTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265F4E6E2C44FFB000DEB1B8 /* Debug */,
+				265F4E6F2C44FFB000DEB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265F4E702C44FFB000DEB1B8 /* Build configuration list for PBXNativeTarget "BSG KALI WERRA TIEFENORTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265F4E712C44FFB000DEB1B8 /* Debug */,
+				265F4E722C44FFB000DEB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		268FCDEC2C69F2D1000A15C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		268FCDF72C69F2D1000A15C3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 268FCDEC2C69F2D1000A15C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		268FCDFD2C69F2D1000A15C3 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 268FCDEC2C69F2D1000A15C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		268FCE012C69F2D1000A15C3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 268FCDEC2C69F2D1000A15C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		268FCE152C69F2D1000A15C3 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 268FCDEC2C69F2D1000A15C3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 265F4E3E2C44FFAF00DEB1B8 /* Project object */;
+}
